@@ -1,0 +1,29 @@
+#top_title {
+    display: none
+}
+
+#content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#HQ_page h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.hero {
+    background: #9663ed;
+}
+
+.navbar {
+    font-size: 1.3em;
+}
+
+.navbar a:hover {
+    transition: color .3s;
+}
