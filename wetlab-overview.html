@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+        rel="stylesheet">
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    </script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <title>Alaive</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light px-5 shadow">
+        <a class="navbar-brand" href="#">
+            <img src="https://2019.igem.org/wiki/images/2/2b/T--UC_San_Diego--logo.png" width="50" height="50"
+                alt="Logo of Alaive">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://2019.igem.org/Team:UC_San_Diego/Description">Description</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://2019.igem.org/Team:UC_San_Diego/Model">Model</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://2019.igem.org/Team:UC_San_Diego/Software">Software</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://2019.igem.org/Team:UC_San_Diego/Code">Code</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Wetlab
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item"
+                            href="http://2019.igem.org/Team:UC_San_Diego/Wetlab_Overview">Overview</a>
+                        <a class="dropdown-item"
+                            href="http://2019.igem.org/Team:UC_San_Diego/Wetlab_Protocol">Protocol</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://2019.igem.org/Team:UC_San_Diego/Team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://2019.igem.org/Team:UC_San_Diego/Attribution">Attribution</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="jumbotron jumbotron-fluid hero">
+        <div class="container my-5">
+            <h1 class="font-weight-bolder text-light text-center mb-0">WETLAB OVERVIEW</h1>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h1>Protocol Summary</h1>
+        <p>
+                Our experiment will identify blood immune markers of AD, but since blood samples from AD patients are not readily available, we will construct an in vitro simulation of AD as a proof of concept. We will first obtain microglia cells and culture and expand the cells. The microglia cells will then be co-cultured with beta amyloid, specifically Aβ42 (Peptide Institute, Osaka, Japan), because beta amyloid accumulation is a hallmark of AD and may be critical to inducing neural damage in AD pathogenesis [1]. 
+
+        </p>
+        <p>
+                We will culture Jurkat T-cells to simulate T-cell response, following the protocol of expanding T-cells in RPMI from Peripheral Blood Mononuclear Cells (PBMC) by Sato et. al. [3]. Afterwards, we will transfer the co-culture media of beta amyloid molecules in the microglia media into the T-cells. While many types of immune cells in peripheral blood are implicated in AD development, we examine T-cells because of their significant dysregulation in AD and their ease of culturing.
+
+        </p>
+        <p>
+                We will have a total of four groups in order to ensure that the inflammatory response is due to the microglial cells being exposed to beta amyloid molecules. The first group is a control group that is just microglial cells, the second group is microglial cells and beta amyloid molecules, the third group is microglial cells and LPS, which simulates a bacterial infection, and the last group is microglial cells and Poly (I:C), which simulates a viral infection.
+
+        </p>
+        <p>
+                We will utilize phage display to discover antibodies that can specifically recognize T-cells exposed to the microglia/Aβ co-culture by comparing the phage display profile of exposed T-cells to that of control T-cells. Briefly, we will obtain a phage display library of random amino acid sequences, which can be readily purchased [2]. The random sequences simulate the CDR regions of antibodies, such that if we sequence the segment of the phage DNA specifying the random sequence, we can infer the sequence of mAbs needed to elicit a similar response as the phage-displayed sequence does. Typical phage display libraries are composed of several billion different sequences, with around 100 identical copies of each sequence present. The phages will be applied to the T-cells and will bind to the T-cell surface. The unbound phages are then eluted, and the CDR sequences of each bound phage will be determined with sequencing of phage DNA. A machine learning algorithm utilizing linear regression and clustering of CDR sequences by amino acid structural similarity will be used to examine the profile of bound phages and identify the most effective set of antibody CDR sequences that can discriminate T-cells exposed to AD conditions vs. other conditions. Once the CDR sequences for antibodies are obtained, we will be able to construct our antibodies from a commercial service, and antibody sequences will be submitted to the BioBrick registry for iGEM. 
+        </p>
+        <p>
+                [1] Fujihara L, et.al. (2017). Inhibition of amyloid β aggregation and protective effect on SH-SY5Y cells by triterpenoid saponins from the cactus Polaskia chichipe. Bioorganic & Medicinal Chemistry, vol 25. doi: 10.1016/j.bmc.2017.04.023
+                [2]  Kovalevich J., Langford D. (2013) Considerations for the Use of SH-SY5Y Neuroblastoma Cells in Neurobiology. In: Amini S., White M. (eds) Neuronal Cell Culture. Methods in Molecular Biology (Methods and Protocols), vol 1078. Humana Press, Totowa, NJ                
+        </p>
+    </section>
+
+</body>
+
+</html>
